@@ -1,0 +1,57 @@
+﻿<Window x:Class="_313502Culminating.APABook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_313502Culminating"
+        mc:Ignorable="d"
+        Title="APABook" Height="700" Width="610">
+    <Canvas>
+        <TextBlock Canvas.Left="35" Canvas.Top="60" FontSize="16">Book</TextBlock>
+        <TextBlock FontSize="25" Canvas.Left="35" Canvas.Top="10">APA Format</TextBlock>
+        <TextBlock Canvas.Left="35" Canvas.Top="96">Enter Author</TextBlock>
+        <TextBox x:Name="BookTitle" Canvas.Left="35" Canvas.Top="380" Width="519"></TextBox>
+        <TextBlock Canvas.Left="36" Canvas.Top="359">Enter Book Title</TextBlock>
+        <TextBox x:Name="FirstName" Canvas.Left="35" Canvas.Top="131" Width="126" Height="18"></TextBox>
+        <TextBlock Canvas.Left="35" Canvas.Top="117" FontSize="8" >First Name</TextBlock>
+        <TextBox x:Name="MidName" Canvas.Left="166" Canvas.Top="131" Width="135"></TextBox>
+        <TextBlock Canvas.Left="166" Canvas.Top="117" FontSize="8" >Middle Name Initial (if applicable)</TextBlock>
+        <TextBox x:Name="LastName" Canvas.Left="306" Canvas.Top="131" Width="171"></TextBox>
+        <Button x:Name="btnAddAuthor" Click="btnAddAutor_Click" Canvas.Left="529" Canvas.Top="124" Content="+" Width="25" Height="25" />
+        <TextBox x:Name="FirstName2" Visibility="Hidden" Canvas.Left="35" Canvas.Top="166" Width="126" Height="18"></TextBox>
+        <TextBox x:Name="MidName2" Visibility="Hidden" Canvas.Left="166" Canvas.Top="166" Width="135"></TextBox>
+        <TextBox x:Name="LastName2" Visibility="Hidden" Canvas.Left="306" Canvas.Top="166" Width="171"></TextBox>
+        <Button x:Name="btnAddAuthor2" Click="btnAddAuthor_Click" Canvas.Left="529" Canvas.Top="159" Content="+" Width="25" Height="25" />
+        <TextBox x:Name="FirstName3" Visibility="Hidden" Canvas.Left="35" Canvas.Top="201" Width="126" Height="18"></TextBox>
+        <TextBox x:Name="MidName3" Visibility="Hidden" Canvas.Left="166" Canvas.Top="201" Width="135"></TextBox>
+        <TextBox x:Name="LastName3" Visibility="Hidden" Canvas.Left="306" Canvas.Top="201" Width="171"></TextBox>
+        <Button x:Name="btnAddAuthor3" Click="btnAddAuthor3_Click" Canvas.Left="529" Canvas.Top="194" Content="+" Width="25" Height="25" />
+        <TextBox x:Name="FirstName4" Visibility="Hidden" Canvas.Left="35" Canvas.Top="241" Width="126" Height="18"></TextBox>
+        <TextBox x:Name="MidName4" Visibility="Hidden"  Canvas.Left="166" Canvas.Top="241" Width="135"></TextBox>
+        <TextBox x:Name="LastName4" Visibility="Hidden" Canvas.Left="306" Canvas.Top="241" Width="171"></TextBox>
+        <Button x:Name="btnAddAuthor4" Click="btnAddAuthor4_Click" Canvas.Left="529" Canvas.Top="234" Content="+" Width="25" Height="25" />
+        <TextBox x:Name="FirstName5" Visibility="Hidden"  Canvas.Left="35" Canvas.Top="281" Width="126" Height="18"></TextBox>
+        <TextBox x:Name="MidName5" Visibility="Hidden"  Canvas.Left="167" Canvas.Top="281" Width="135"></TextBox>
+        <TextBox x:Name="LastName5" Visibility='Hidden' Canvas.Left="306" Canvas.Top="281" Width="171"></TextBox>
+        <Button x:Name="btnAddAuthor5" Click="btnAddAuthor5_Click" Canvas.Left="529" Canvas.Top="274" Content="+" Width="25" Height="25" />
+        <TextBox x:Name="FirstName6" Visibility="Hidden"  Canvas.Left="35" Canvas.Top="320" Width="126" Height="18"></TextBox>
+        <TextBox x:Name="MidName6" Visibility="Hidden"  Canvas.Left="167" Canvas.Top="320" Width="135"></TextBox>
+        <TextBox x:Name="LastName6" Visibility="Hidden" Canvas.Left="307" Canvas.Top="320" Width="171"></TextBox>
+        <TextBlock Canvas.Top="117" Canvas.Left="306" FontSize="8" >Last Name Initial</TextBlock>
+        <TextBox x:Name="Year" MaxLines="4" Canvas.Left="152" Canvas.Top="429" Width="85"></TextBox>
+        <TextBlock Canvas.Top="408" RenderTransformOrigin="1.581,1.159" Canvas.Left="268">Edition</TextBlock>
+        <TextBlock Canvas.Top="408" RenderTransformOrigin="1.581,1.159" Canvas.Left="387">Chapter Title</TextBlock>
+        <TextBox x:Name="Edition" Canvas.Left="268" Canvas.Top="429" Width="85" />
+        <TextBlock Canvas.Top="461" RenderTransformOrigin="0.507,0.501" Canvas.Left="35">Location Published</TextBlock>
+        <TextBox x:Name="Location" Canvas.Left="36" Canvas.Top="477" Width="204"></TextBox>
+        <TextBlock Canvas.Top="461" RenderTransformOrigin="0.507,0.501" Canvas.Left="268">Publisher</TextBlock>
+        <TextBox x:Name="Publisher" Canvas.Left="268" Canvas.Top="477" Width="286"></TextBox>
+        <TextBox x:Name="ChapterTitle" Canvas.Left="387" Canvas.Top="429" Width="167"/>
+        <TextBlock Canvas.Top="408" RenderTransformOrigin="1.581,1.159" Canvas.Left="152">Year Published</TextBlock>
+        <TextBlock Canvas.Left="36" Canvas.Top="408">Page Number(s)</TextBlock>
+        <TextBox x:Name="APApage" Canvas.Left="36" Canvas.Top="429" Width="85"></TextBox>
+        <Button x:Name="btnCalculate2" Content="Click to get source" Click="btnCalculate2_Click" Canvas.Left="36" Canvas.Top="520" />
+        <Label x:Name="lblOutput" Canvas.Left="36" Canvas.Top="545" Height="96"
+               Width="1049" FontFamily="Times New Roman"/>
+    </Canvas>
+</Window>

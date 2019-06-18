@@ -1,0 +1,17 @@
+﻿<Window x:Class="_313502Culminating.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_313502Culminating"
+        mc:Ignorable="d"
+        Title="MLA and APA citations" Height="350" Width="525">
+    <Canvas>
+        <TextBlock Canvas.Left="147" Height="45" Width="223" FontSize="20">MLA and APA formatting</TextBlock>
+        <Button x:Name="MLAweb" Content="MLA Format for website" Canvas.Left="51" Canvas.Top="97" Height="48" Width="188" FontSize="16" Click="MLA_Click" />
+        <Button x:Name="APAweb" Content="APA Format for website" Canvas.Right="100" Canvas.Top="97" Height="48" Width="188" FontSize="16"  Click="APA_Click" Canvas.Left="277" />
+        <Button x:Name="Mlabook" Content="MLA Format for book" Click="Mlabook_Click" Canvas.Left="51" Canvas.Top="176" Height="48" Width="188" FontSize="16"/>
+        <Button x:Name="APAbook" Content="APA Format for book" Click="APAbook_Click" FontSize="16" Canvas.Left="277" Canvas.Top="176" Height="48" Width="188"/>
+        <TextBlock Canvas.Top="285" FontSize="18">By Elliott McArthur and Aidan Hobman</TextBlock>
+    </Canvas>
+</Window>
